@@ -1,13 +1,13 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-class greaph
+class graph
 {
     private:
     int vertices;
     vector<vector<int>>adjlist;
     public:
-    greaph(int vertices)
+    graph(int vertices)
     {
         this->vertices=vertices;
         adjlist.resize(vertices,vector<int>(vertices,0));
@@ -32,7 +32,7 @@ class greaph
 int main()
 {
     int v=8;
-    greaph g(v);
+    graph g(v);
     g.addedge(1,0);
     g.addedge(1,2);
     g.addedge(1,3);
